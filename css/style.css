@@ -1,2 +1,143 @@
+@charset "UTF-8";
 body {
-  background: #4d7175; }
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 27px;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  color: #f7f4f1;
+  font-style: normal;
+  background-color: #242424; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0, 0, 0, 0); }
+
+body {
+  background: #242424 url("./../img/barbershop-index-mobile.jpg") no-repeat 50% 0;
+  background-size: 320px auto;
+  min-height: 1750px; }
+
+@media (min-width: 768px) {
+  body {
+    background: #242424 url("./../img/barbershop-index-tablet.jpg") no-repeat 50% 0;
+    background-size: 768px auto; } }
+
+@media (min-width: 1200px) {
+  body {
+    background: #242424 url("./../img/barbershop-index-desktop.jpg") no-repeat 50% 0;
+    background-size: 1200px auto; } }
+
+/* Временно для сетки */
+@media (min-width: 768px) {
+  .main-nav {
+    /* Временно для сетки */
+    min-height: 70px; } }
+
+.page-header {
+  display: flex;
+  flex-direction: column;
+  outline: 1px solid #c0624b;
+  background-color: rgba(192, 98, 75, 0.5); }
+
+.page-header__logo {
+  width: 100%;
+  height: 85px; }
+
+@media (min-width: 768px) {
+  .page-header__logo {
+    order: 1;
+    height: 400px; } }
+
+@media (min-width: 1200px) {
+  .page-header__logo {
+    height: 648px; } }
+
+.main-nav {
+  width: 320px;
+  margin: 0 auto; }
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /*Временно для сетки*/ }
+
+/*Временно для сетки*/
+@media (min-width: 768px) {
+  .main-nav {
+    width: auto;
+    margin: 0; }
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 640px;
+    margin: 0 auto; }
+  .main-nav__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /*Временно для сетки*/ }
+  .site-list {
+    width: 570px; }
+  .user-list {
+    width: 60px; } }
+
+@media (min-width: 1200px) {
+  .main-nav__wrapper {
+    width: 960px; }
+  .site-list {
+    width: 780px; }
+  .user-list {
+    width: 160px; } }
+
+.stats {
+  width: 320px;
+  margin: 0 auto;
+  /*Временно для сетки*/
+  outline: 1px solid #c0624b;
+  background-color: rgba(192, 98, 75, 0.5); }
+
+.stats__header {
+  padding: 30px 40px 25px 40px;
+  /*Временно для сетки*/
+  min-height: 130px;
+  outline: 1px solid #bec04b;
+  background-color: rgba(190, 192, 75, 0.5); }
+
+.stats__list {
+  width: 100%;
+  /*Временно для сетки*/
+  min-height: 320px;
+  outline: 1px solid #70c04b;
+  background-color: rgba(112, 192, 75, 0.5); }
+
+@media (min-width: 768px) {
+  .stats {
+    width: 640px;
+    margin-top: -185px; }
+  .stats__list {
+    display: flex; } }
+
+@media (min-width: 1200px) {
+  .stats {
+    width: 960px;
+    margin-top: -160px;
+    display: flex; }
+  .stats__header {
+    flex-shrink: 0;
+    width: 240px; }
+  .stats__list {
+    display: flex; } }

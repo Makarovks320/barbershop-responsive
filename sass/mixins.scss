@@ -1,0 +1,39 @@
+// МИКСИН ДЛЯ СОЗДАНИЯ CLEARFIX
+@mixin no-outline {
+    outline: none;
+    background: transparent;
+
+    &::before {
+      display: none;
+    }
+  }
+
+// @mixin clearfix {
+//     &::after {
+//       content: "";
+
+//       display: table;
+//       clear: both;
+//     }
+//   }
+
+//   // АДАПТИВНЫЙ ЦЕНТРОВЩИК
+//   @mixin container {
+//     width: 320px;
+//     margin: 0 auto;
+//     @media $tablet-widths {
+//       width: 640px;
+//     }
+//     @media $desktop-widths {
+//       width: 960px;
+//     }
+//   }
+
+//   @mixin container-fluid {
+//     width: auto;
+//     @media $tablet-widths {
+//       width: 81%;  /* 640px / 768px ~= 84% */
+//       max-width: 1200px; /* 960px / 0.84 ~= 1142px (центровка начнется чуть раньше 1200px*/
+//       margin: 0 auto;
+//     }
+//   }

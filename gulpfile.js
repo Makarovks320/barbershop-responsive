@@ -2,12 +2,14 @@
 
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var plumber= require('gulp-plumber');
 
 sass.compiler = require('node-sass');
 
 gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
-    .pipe(sass().on('error', sass.logError))
+  return gulp.src('./sass/style.scss')
+    .pipe(plumber())
+    .pipe(sass.sync().on('error', sass.logError))
     .pipe(gulp.dest('./css'));
 });
 

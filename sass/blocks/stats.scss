@@ -1,0 +1,47 @@
+.stats {
+    width: 320px;
+    margin: 0 auto;
+    /*Временно для сетки*/
+    // min-height: 570px;
+    outline: 1px solid rgb(192, 98, 75);
+    background-color: rgba(192, 98, 75, 0.5);
+}
+.stats__header {
+    padding: 30px 40px 25px 40px;
+    /*Временно для сетки*/
+    min-height: 130px;
+    outline: 1px solid rgb(190, 192, 75);
+    background-color: rgba(190, 192, 75, 0.5);
+}
+.stats__list {
+    width: 100%;
+    /*Временно для сетки*/
+    min-height: 320px;
+    outline: 1px solid rgb(112, 192, 75);
+    background-color: rgba(112, 192, 75, 0.5);
+}
+
+@media(min-width: $tablet-width) {
+    .stats {
+        width: 640px;
+        margin-top: -185px;
+    }
+    .stats__list {
+        display: flex;
+    }
+}
+
+@media(min-width: $desktop-width) {
+    .stats {
+        width: 960px;
+        margin-top: -160px;
+        display: flex;
+    }
+    .stats__header {
+        flex-shrink: 0;
+        width: 240px;
+    }
+    .stats__list {
+        display: flex;
+    }
+}
