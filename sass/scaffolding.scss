@@ -1,11 +1,13 @@
 // ИСХОДНАЯ ЗАГОТОВКА
 
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic');
+
 // @font-face {
 //     font-weight: normal;
 //     font-family: "PT Sans Narrow";
 //     font-style: normal;
 
-//     src: url("../fonts/ptsansnarrow.woff") format("woff");
+//     src: url("fonts/PTSansNarrow.woff2") format("woff2"), url("fonts/PTSansNarrow.woff") format("woff");
 //   }
 
 //   @font-face {
@@ -13,7 +15,7 @@
 //     font-family: "PT Sans Narrow";
 //     font-style: normal;
 
-//     src: url("../fonts/ptsansnarrowbold.woff") format("woff");
+//     src: url("fonts/PTSansNarrowBold.woff2") format("woff2"), url("fonts/PTSansNarrowBold.woff") format("woff");
 //   }
 
   body {

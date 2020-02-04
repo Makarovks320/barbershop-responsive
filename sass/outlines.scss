@@ -1,34 +1,32 @@
-body {
-    background: $bg-darkgrey url("./../img/barbershop-index-mobile.jpg") no-repeat 50% 0;
-    background-size: 320px auto;
-    min-height: 1750px;
-  }
-
-
-  @media (min-width: $tablet-width) {
-    body {
-      background: $bg-darkgrey url("./../img/barbershop-index-tablet.jpg") no-repeat 50% 0;
-      background-size: 768px auto;
-    }
-  }
-
-
-  @media (min-width: $desktop-width) {
-    body {
-      background: $bg-darkgrey url("./../img/barbershop-index-desktop.jpg") no-repeat 50% 0;
-      background-size: 1200px auto;
-    }
-  }
-
-//   .main-nav {
-    /* Временно для сетки */
-    // min-height: 310px;
+// body {
+//     background: $bg-darkgrey url("./../img/barbershop-index-mobile.jpg") no-repeat 50% 0;
+//     background-size: 320px auto;
+//     min-height: 1750px;
 //   }
 
 
-  @media (min-width: $tablet-width) {
-    .main-nav {
-      /* Временно для сетки */
-      min-height: 70px;
-    }
-  }
+//   @media (min-width: $tablet-width) {
+//     body {
+//       background: $bg-darkgrey url("./../img/barbershop-index-tablet.jpg") no-repeat 50% 0;
+//       background-size: 768px auto;
+//     }
+//   }
+
+
+//   @media (min-width: $desktop-width) {
+//     body {
+//       background: $bg-darkgrey url("./../img/barbershop-index-desktop.jpg") no-repeat 50% 0;
+//       background-size: 1200px auto;
+//     }
+//   }
+
+//   .main-nav {
+//     min-height: 310px;
+//   }
+
+
+//   @media (min-width: $tablet-width) {
+//     .main-nav {
+//       min-height: 70px;
+//     }
+//   }
