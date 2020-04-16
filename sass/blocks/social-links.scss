@@ -20,19 +20,19 @@
     &--vk {
       width: 107px;
 
-      background-image: url("../img/vk-big.png");
+      background-image: url("/img/vk-big.png");
     }
     &--fb {
       width: 104px;
       margin-right: -1px;
       margin-left: -1px;
 
-      background-image: url("../img/fb-big.png");
+      background-image: url("/img/fb-big.png");
     }
     &--ig {
       width: 109px;
 
-      background-image: url("../img/ig-big.png");
+      background-image: url("/img/ig-big.png");
     }
     &:hover,
     &:focus {
@@ -62,15 +62,15 @@
         margin-right: 0;
       }
       &--vk {
-        background-image: url("../img/vk-small.png");
+        background-image: url("/img/vk-small.png");
       }
       &--fb {
         margin-left: 0;
 
-        background-image: url("../img/fb-small.png");
+        background-image: url("/img/fb-small.png");
       }
       &--ig {
-        background-image: url("../img/ig-small.png");
+        background-image: url("/img/ig-small.png");
       }
     }
   }
