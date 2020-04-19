@@ -10,30 +10,75 @@
 </head>
 
 <body>
+<!--    <svg style="display: none">-->
+<!--        <symbol viewBox="0 0 16 16" id="icon-login">-->
+<!--            <polygon points="0 7 7.01 7 7.01 4.06 10.96 8.01 7.01 11.91 7.01 9.06 0 9.02 0 7"/>-->
+<!--            <polygon points="7.01 0 7.01 2 14.03 2 14.03 13.99 7.01 13.99 7.01 16 16 16 16 0 7.01 0"/>-->
+<!--        </symbol>-->
+<!--        <symbol  viewBox="0 0 21 20" id="icon-scissors">-->
+<!--                <path d="M8 4a4 4 0 1 0-4 4 2.9 2.9 0 0 0 1.6-.4L8 10l-2.4 2.4A2.9 2.9 0 0 0 4 12a4 4 0 1 0 4 4 2.9 2.9 0 0 0-.4-1.6L10 12l7 7h4L7.6 5.6A2.9 2.9 0 0 0 8 4zM4 6a2 2 0 1 1 2-2 2 2 0 0 1-2 2zm0 12a2 2 0 1 1 2-2 2 2 0 0 1-2 2zm6-8.5a.5.5 0 1 1-.5.5.5.5 0 0 1 .5-.5zM21 1h-4l-6 6 2 2 8-8z"/>-->
+<!--        </symbol>-->
+<!--    </svg>-->
     <header class="page-header">
         <a class="page-header__logo">
-            <img class="page-header__logo-image" src="./img/logotype-mobile.svg" width="226px" height="30px"
-            alt="Барбершоп Бородинский"/>
+            <picture>
+                <source media="(min-width: 1200px)" srcset="./build/img/logotype-desktop.svg">
+                <source media="(min-width: 768px)" srcset="./build/img/logotype-tablet.svg">
+                <img class="page-header__logo-image" src="./build/img/logotype-mobile.svg" width="226px" height="30px"
+                    alt="Барбершоп Бородинский"/>
+                </picture>
         </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">Open Menu</span></button>
             <div class="main-nav__wrapper">
                 <ul class="main-nav__list site-list">
-                    <li class="site-list__item site-list__item--active"><a>Главная</a></li>
-                    <li class="site-list__item"><a href="#">Наши работы</a></li>
-                    <li class="site-list__item"><a href="#">Записаться</a></li>
-                    <li class="site-list__item"><a href="#">Контакты</a></li>
-                    <li class="site-list__item"><a href="#">HTML Academy</a></li>
+                    <li class="site-list__item site-list__item--active">
+                        <a>
+                            <svg class="site-list__icon-comb" width="16" height="16">
+                                <use xlink:href = "./build/img/sprite.svg#icon-scissors"></use>
+                            </svg>
+                            Главная
+                        </a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="#">
+                            <svg class="site-list__icon-comb" width="16" height="16">
+                                <use xlink:href = "./build/img/sprite.svg#icon-scissors"></use>
+                            </svg>
+                            Наши работы
+                        </a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="#">
+                            <svg class="site-list__icon-comb" width="16" height="16">
+                                <use xlink:href = "./build/img/sprite.svg#icon-scissors"></use>
+                            </svg>
+                            Записаться
+                        </a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="#">
+                            <svg class="site-list__icon-comb" width="16" height="16">
+                                <use xlink:href = "./build/img/sprite.svg#icon-scissors"></use>
+                            </svg>
+                            Контакты
+                        </a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="#">
+                            <svg class="site-list__icon-comb" width="16" height="16">
+                                <use xlink:href = "./build/img/sprite.svg#icon-scissors"></use>
+                            </svg>
+                            HTML Academy
+                        </a>
+                    </li>
                 </ul>
                 <ul class="main-nav__list user-list">
                     <li class="user-list__item">
                         <a class="user-list__login" href="#">
-                            <svg class="user-list__login-icon" width="16" height="16"
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-                            <polygon points="0 7 7.01 7 7.01 4.06 10.96 8.01 7.01
-                            11.91 7.01 9.06 0 9.02 0 7"/><polygon points="7.01 0 7.01
-                             2 14.03 2 14.03 13.99 7.01 13.99 7.01 16 16 16 16 0 7.01
-                              0"/></svg>
+                            <svg class="user-list__login-icon" width="16" height="16">
+                                <use xlink:href = "./build/img/sprite.svg#icon-login"></use>
+                            </svg>
                             Войти
                         </a>
                     </li>

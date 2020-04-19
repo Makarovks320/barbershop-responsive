@@ -12,8 +12,6 @@ const concat = require('gulp-concat');
 const uglifyEs = require('gulp-uglify-es').default;
 const imagemin = require('gulp-imagemin');
 
-// const uglify = require('gulp-uglify');
-
 
 sass.compiler = require('node-sass');
 
@@ -50,10 +48,10 @@ function scripts() {
 
 function watch() {
     browserSync.init({ /*запустит локальный сервак на node.js*/
-        server: {baseDir: "./"} /*указывает, где искать html-файлы*/
+        server: "./", /*указывает, где искать html-файлы*/
     });
-    gulp.watch('./sass/**/*.scss', styles);
-    gulp.watch('./js/**/*.js', scripts);
+    gulp.watch('./sass/**/*.scss', styles).on('change', browserSync.reload);
+    gulp.watch('./js/**/*.js', scripts).on('change', browserSync.reload);
     gulp.watch('./*.html').on('change', browserSync.reload);
 }
 
