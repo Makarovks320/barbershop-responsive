@@ -18,15 +18,17 @@
     .page-header {
         background-color: black;
     }
+
     .page-header__logo {
         order: 1;
         width: 100%;
         height: 400px;
         background-color: black;
-        background-image: url("/img/background.jpg");
+        background-image: url("/build/img/background.jpg");
         background-repeat: no-repeat;
         background-position: center -9px;
     }
+
     .page-header__logo-image {
         display: block;
         width: 370px;
@@ -42,9 +44,8 @@
         background-position: center 0;
         background-size: cover;
     }
+
     .page-header__logo-image {
         margin-top: 57px;
     }
 }
-
-
