@@ -21,7 +21,7 @@
     &--vk {
         width: 107px;
 
-        background-image: url("/img/vk-big.png");
+        background-image: url("/build/img/vk-big.png");
     }
 
     &--fb {
@@ -29,13 +29,13 @@
         margin-right: -1px;
         margin-left: -1px;
 
-        background-image: url("/img/fb-big.png");
+        background-image: url("/build/img/fb-big.png");
     }
 
     &--ig {
         width: 109px;
 
-        background-image: url("/img/ig-big.png");
+        background-image: url("/build/img/ig-big.png");
     }
 
     &:hover,
@@ -69,17 +69,17 @@
         }
 
         &--vk {
-            background-image: url("/img/vk-small.png");
+            background-image: url("/build/img/vk-small.png");
         }
 
         &--fb {
             margin-left: 0;
 
-            background-image: url("/img/fb-small.png");
+            background-image: url("/build/img/fb-small.png");
         }
 
         &--ig {
-            background-image: url("/img/ig-small.png");
+            background-image: url("/build/img/ig-small.png");
         }
     }
 }
