@@ -1,4 +1,3 @@
-
 .site-list {
     font-weight: bold;
 }
@@ -12,8 +11,8 @@
     font-size: 18px;
     line-height: 24px;
     color: #ffffff;
-    text-transform: uppercase;
     text-decoration: none;
+    text-transform: uppercase;
 
     background-color: $color-brown;
     border-top: 1px solid #886e5b;
@@ -36,8 +35,8 @@
 .site-list__icon-comb {
     position: absolute;
     top: 15px;
-    left: auto;
     right: 15px;
+    left: auto;
 
     width: 16px;
     height: 16px;
@@ -53,6 +52,7 @@
 
         width: 570px;
     }
+
     .site-list__item {
         margin-right: 32px;
 
@@ -64,7 +64,6 @@
             position: relative;
 
             &::after {
-                content: "";
 
                 position: absolute;
                 right: 0;
@@ -72,11 +71,13 @@
                 left: 0;
 
                 height: 3px;
+                content: "";
 
                 background: $color-brown;
             }
         }
     }
+
     .site-list__item a {
         padding: 0;
         padding-top: 25px;
@@ -88,8 +89,8 @@
 
     .site-list__icon-comb {
         top: 8px;
-        left: 50%;
         right: auto;
+        left: 50%;
 
         transform: translateX(-50%);
     }
@@ -146,6 +147,7 @@
 
         transform: none;
     }
+
     .site-list__item a[href] {
         &:hover {
             color: #000000;

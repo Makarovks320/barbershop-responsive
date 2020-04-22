@@ -1,12 +1,12 @@
 .main-nav {
     position: relative;
-    background-color: #826550;
     min-height: 51px;
+    background-color: #826550;
 }
 
 .main-nav__list {
-    margin: 0;
     padding: 0;
+    margin: 0;
     list-style: none;
 }
 
@@ -14,13 +14,14 @@
     position: absolute;
     top: 0;
     right: 0;
+    z-index: 2;
     display: block;
     width: 70px;
     height: 50px;
-    background-color: #6a4d38;
     cursor: pointer;
+    background-color: #6a4d38;
     border: none;
-    z-index: 2;
+
     &:hover,
     &:active {
         background-color: #624538;
@@ -28,20 +29,22 @@
 }
 
 .main-nav--closed .main-nav__toggle::before {
-    content: '';
     position: absolute;
     top: 15px;
     left: 17px;
     width: 36px;
     height: 2px;
+    content: '';
 
     background-color: #fff;
     box-shadow: 0 8px 0 0 #fff, 0 16px 0 0 #fff;
 }
+
 .main-nav--closed .main-nav__toggle:active::before {
     background-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0 8px 0 0 rgba(255, 255, 255, 0.3), 0 16px 0 0 rgba(255, 255, 255, 0.3);
 }
+
 .main-nav--opened .main-nav__toggle {
     top: 0;
     right: auto;
@@ -49,50 +52,51 @@
 
     &::before,
     &::after {
-      content: "";
 
-      position: absolute;
-      top: 24px;
-      left: 18px;
+        position: absolute;
+        top: 24px;
+        left: 18px;
 
-      width: 36px;
-      height: 2px;
+        width: 36px;
+        height: 2px;
+        content: "";
 
-      background-color: #ffffff;
+        background-color: #ffffff;
     }
 
     &::before {
-      transform: rotate(45deg);
+        transform: rotate(45deg);
     }
 
     &::after {
-      transform: rotate(-45deg);
+        transform: rotate(-45deg);
     }
 
     &:active::before,
     &:active::after {
-      background-color: rgba(255, 255, 255, 0.3);
+        background-color: rgba(255, 255, 255, 0.3);
     }
-  }
-  @media (max-width: $mobile-width-only) {
+}
+
+@media (max-width: $mobile-width-only) {
 
     .main-nav--closed .site-list__item {
-      display: none;
+        display: none;
 
-      &--active {
-        display: block;
-      }
+        &--active {
+            display: block;
+        }
     }
 
     .main-nav--closed .site-list__item--active a {
-      padding-right: 70px;
-      padding-left: 70px;
+        padding-right: 70px;
+        padding-left: 70px;
 
-      text-align: center;
+        text-align: center;
     }
 
     .main-nav--closed .user-list__item {
-      display: none;
+        display: none;
     }
 
     .main-nav--opened .main-nav__wrapper {
@@ -103,10 +107,9 @@
         z-index: 10;
 
         background-color: #6a4d38;
-      }
+    }
 
-      .main-nav--opened .main-nav__wrapper::before {
-        content: "";
+    .main-nav--opened .main-nav__wrapper::before {
 
         position: absolute;
         top: 0;
@@ -115,41 +118,45 @@
 
         width: 7px;
         height: 100%;
+        content: "";
 
         box-shadow: inset 4px 0 7px -2px rgba(0, 0, 0, 0.4);
-      }
-      .main-nav--nojs .main-nav__toggle {
-        display: none;
-      }
+    }
 
-      .main-nav--nojs .main-nav__wrapper {
+    .main-nav--nojs .main-nav__toggle {
+        display: none;
+    }
+
+    .main-nav--nojs .main-nav__wrapper {
         position: static;
         min-height: 0;
-      }
+    }
 
-      .main-nav--nojs .site-list__item {
+    .main-nav--nojs .site-list__item {
         display: block;
-      }
+    }
 
-      .main-nav--nojs .site-list__item--active a {
+    .main-nav--nojs .site-list__item--active a {
         padding-right: 21px;
         padding-left: 21px;
 
         text-align: left;
-      }
+    }
 
-      .main-nav--nojs .user-list__item {
+    .main-nav--nojs .user-list__item {
         display: block;
 
         background-color: #6a4d38;
-      }
+    }
 }
+
 @media (min-width: $tablet-width) {
     .main-nav {
         width: auto;
         margin: 0;
         background-color: #000000;
     }
+
     .main-nav__wrapper {
         display: flex;
         justify-content: space-between;
@@ -157,9 +164,10 @@
         max-width: 960px;
         margin: 0 auto;
     }
+
     .main-nav__toggle {
         display: none;
-      }
+    }
 }
 
 @media (min-width: $desktop-width) {

@@ -16,17 +16,17 @@
                 <source media="(min-width: 1200px)" srcset="./build/img/logotype-desktop.svg">
                 <source media="(min-width: 768px)" srcset="./build/img/logotype-tablet.svg">
                 <img class="page-header__logo-image" src="./build/img/logotype-mobile.svg" width="226px" height="30px"
-                    alt="Барбершоп Бородинский"/>
-                </picture>
+                    alt="Барбершоп Бородинский" />
+            </picture>
         </a>
-        <nav class="main-nav main-nav--closed main-nav--nojs">
+        <nav class="main-nav main-nav--closed">
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">Open Menu</span></button>
             <div class="main-nav__wrapper">
                 <ul class="main-nav__list site-list">
                     <li class="site-list__item site-list__item--active">
                         <a>
                             <svg class="site-list__icon-comb" width="16" height="16">
-                                <use xlink:href = "./build/img/sprite.svg#icon-scissors"></use>
+                                <use xlink:href="./build/img/sprite.svg#icon-scissors"></use>
                             </svg>
                             Главная
                         </a>
@@ -34,7 +34,7 @@
                     <li class="site-list__item">
                         <a href="#">
                             <svg class="site-list__icon-comb" width="16" height="16">
-                                <use xlink:href = "./build/img/sprite.svg#icon-scissors"></use>
+                                <use xlink:href="./build/img/sprite.svg#icon-scissors"></use>
                             </svg>
                             Наши работы
                         </a>
@@ -42,7 +42,7 @@
                     <li class="site-list__item">
                         <a href="#">
                             <svg class="site-list__icon-comb" width="16" height="16">
-                                <use xlink:href = "./build/img/sprite.svg#icon-scissors"></use>
+                                <use xlink:href="./build/img/sprite.svg#icon-scissors"></use>
                             </svg>
                             Записаться
                         </a>
@@ -50,7 +50,7 @@
                     <li class="site-list__item">
                         <a href="#">
                             <svg class="site-list__icon-comb" width="16" height="16">
-                                <use xlink:href = "./build/img/sprite.svg#icon-scissors"></use>
+                                <use xlink:href="./build/img/sprite.svg#icon-scissors"></use>
                             </svg>
                             Контакты
                         </a>
@@ -58,7 +58,7 @@
                     <li class="site-list__item">
                         <a href="#">
                             <svg class="site-list__icon-comb" width="16" height="16">
-                                <use xlink:href = "./build/img/sprite.svg#icon-scissors"></use>
+                                <use xlink:href="./build/img/sprite.svg#icon-scissors"></use>
                             </svg>
                             HTML Academy
                         </a>
@@ -68,7 +68,7 @@
                     <li class="user-list__item">
                         <a class="user-list__login" href="#">
                             <svg class="user-list__login-icon" width="16" height="16">
-                                <use xlink:href = "./build/img/sprite.svg#icon-login"></use>
+                                <use xlink:href="./build/img/sprite.svg#icon-login"></use>
                             </svg>
                             Войти
                         </a>
@@ -83,11 +83,11 @@
         <section class="stats">
             <header class="stats__header">
                 <h2 class="visually-hidden">Статистика Барбршопа</h2>
-                    <b class="stats__slogan">Стрижка у нас это выгодно!</b>
-                    <p class="stats__intro">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
-                    <small class="stats__legend stats__legend--top">
-                        <sup>*</sup> — приведённые данные ложь
-                    </small>
+                <b class="stats__slogan">Стрижка у нас это выгодно!</b>
+                <p class="stats__intro">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
+                <small class="stats__legend stats__legend--top">
+                    <sup>*</sup> — приведённые данные ложь
+                </small>
             </header>
             <table class="stats__list">
                 <tr>
@@ -216,25 +216,27 @@
 
     <footer class="page-footer">
         <div class="page-footer__wrapper">
-          <p class="page-footer__contacts">
-            <b>Барбершоп Бородинский</b><br>
-            г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
-            <a class="btn" href="tel:+78125556666"><span class="page-footer__phone-show">Тел.:</span> +7 (812) 555-66-66</a>
-          </p>
-          <p class="page-footer__social">
-            <span class="page-footer__social-title">Давайте дружить!</span>
-            <span class="social-links">
-              <a class="social-link  social-link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-              <a class="social-link  social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-              <a class="social-link  social-link--ig" href="https://instagram.com/htmlacademy">Мы в Инстаграме</a>
-            </span>
-          </p>
-          <p class="page-footer__copyright">
-            Разработано:
-            <a class="btn" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </p>
+            <p class="page-footer__contacts">
+                <b>Барбершоп Бородинский</b><br>
+                г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
+                <a class="page-footer__contact-link" href="tel:+78125556666"><span
+                        class="page-footer__phone-show">Тел.:</span> +7 (812) 555-66-66</a>
+            </p>
+            <p class="page-footer__social">
+                <span class="page-footer__social-title">Давайте дружить!</span>
+                <span class="social-links">
+                    <a class="social-link  social-link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+                    <a class="social-link  social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в
+                        Фейсбуке</a>
+                    <a class="social-link  social-link--ig" href="https://instagram.com/htmlacademy">Мы в Инстаграме</a>
+                </span>
+            </p>
+            <p class="page-footer__copyright">
+                Разработано:
+                <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </p>
         </div>
-      </footer>
+    </footer>
 
     <script src='./build/js/scripts-min.js'></script>
 </body>

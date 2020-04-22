@@ -17,7 +17,7 @@ const gulpStylelint = require('gulp-stylelint');
 
 
 function styles() {
-    return gulp.src('./sass/style.scss')
+    return gulp.src('./scss/style.scss')
                 .pipe(plumber())
                 .pipe(sass({
                     includePaths: require('node-normalize-scss').includePaths
@@ -51,7 +51,7 @@ function watch() {
     browserSync.init({ /*запустит локальный сервак на node.js*/
         server: "./", /*указывает, где искать html-файлы*/
     });
-    gulp.watch('./sass/**/*.scss', styles).on('change', browserSync.reload);
+    gulp.watch('./scss/**/*.scss', styles).on('change', browserSync.reload);
     gulp.watch('./js/**/*.js', scripts).on('change', browserSync.reload);
     gulp.watch('./*.html').on('change', browserSync.reload);
 }
@@ -67,7 +67,7 @@ function copy() {
 }
 
 function stylelint() {
-  return gulp.src('./sass/**/*.scss')
+  return gulp.src('./scss/**/*.scss')
               .pipe(gulpStylelint({
                 reporters: [
                   {formatter: 'string', console: true}
