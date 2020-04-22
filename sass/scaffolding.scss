@@ -18,39 +18,37 @@
 //     src: url("fonts/PTSansNarrowBold.woff2") format("woff2"), url("fonts/PTSansNarrowBold.woff") format("woff");
 //   }
 
-  body {
-    min-width: 320px;
-    margin: 0;
-    padding: 0;
+body {
+  min-width: 320px;
+  padding: 0;
+  margin: 0;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
 
-    font-size: 18px;
-    line-height: 27px;
-    font-family: "PT Sans Narrow", Arial, sans-serif;
-    color: #f7f4f1;
-    font-style: normal;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 27px;
+  color: #f7f4f1;
 
-    background-color: $bg-darkgrey;
-  }
+  background-color: $bg-darkgrey;
+}
 
-  img {
-    max-width: 100%;
-    height: auto;
-  }
+img {
+  max-width: 100%;
+  height: auto;
+}
 
-  // Доступное скрытие элементов
+// Доступное скрытие элементов
 
-  .visually-hidden {
-    position: absolute;
+.visually-hidden {
+  position: absolute;
 
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
 
-    border: 0;
+  clip: rect(0, 0, 0, 0);
 
-    clip: rect(0, 0, 0, 0);
-  }
-
-
+  border: 0;
+}

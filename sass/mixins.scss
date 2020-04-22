@@ -1,12 +1,12 @@
 // МИКСИН ДЛЯ СОЗДАНИЯ CLEARFIX
 @mixin no-outline {
-    outline: none;
-    background: transparent;
+  background: transparent;
+  outline: none;
 
-    &::before {
-      display: none;
-    }
+  &::before {
+    display: none;
   }
+}
 
 // @mixin clearfix {
 //     &::after {

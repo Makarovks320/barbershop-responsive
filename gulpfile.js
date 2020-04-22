@@ -11,9 +11,10 @@ const rename = require('gulp-rename');
 const concat = require('gulp-concat');
 const uglifyEs = require('gulp-uglify-es').default;
 const imagemin = require('gulp-imagemin');
+const gulpStylelint = require('gulp-stylelint');
 
+// sass.compiler = require('node-sass');
 
-sass.compiler = require('node-sass');
 
 function styles() {
     return gulp.src('./sass/style.scss')
@@ -65,10 +66,15 @@ function copy() {
                 .pipe(gulp.dest('./build'))
 }
 
-function sprite() {
-    return
+function stylelint() {
+  return gulp.src('./sass/**/*.scss')
+              .pipe(gulpStylelint({
+                reporters: [
+                  {formatter: 'string', console: true}
+                ]
+              }));
 }
-// добавить webp, svgstore
+// можно добавить webp, svgstore, sprite
 function images() {
     return gulp.src('./build/img/*.{png,jpg,gif}') /*берем любой .png, .jpg, .gif файл в любой подпапке папки img*/
       .pipe(imagemin([      /*imagemin сам по себе содержит в себе множество плагинов (работа с png,svg,jpg и тд)*/
@@ -78,6 +84,7 @@ function images() {
       .pipe(gulp.dest('./build/img'));
   };
 
+gulp.task('lintScss', stylelint);
 gulp.task('clean', clean);
 gulp.task('watch', watch);
 gulp.task('build', gulp.series(clean, /*gulp.series синхронно и последовательно запускает функции*/
