@@ -30,6 +30,11 @@
         width: 60px;
     }
 
+    .user-list__login-icon {
+        top: 29px;
+        left: 12px;
+    }
+
     .user-list__login {
         width: 60px;
         height: 70px;
@@ -47,17 +52,16 @@
             fill: #ffffff;
         }
     }
-
-    .user-list__login-icon {
-        top: 29px;
-        left: 12px;
-    }
 }
 
 @media (min-width: $desktop-width) {
     .user-list {
         width: auto;
         max-width: 160px;
+    }
+
+    .user-list__login-icon {
+        left: 15px;
     }
 
     .user-list__login {
@@ -96,9 +100,5 @@
         &:active .user-list__login-icon {
             opacity: 0.1;
         }
-    }
-
-    .user-list__login-icon {
-        left: 15px;
     }
 }

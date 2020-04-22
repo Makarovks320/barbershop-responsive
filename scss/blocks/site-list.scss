@@ -95,6 +95,18 @@
         transform: translateX(-50%);
     }
 
+    &:active {
+        color: #ffffff;
+
+        background-color: #000000;
+        opacity: 0.3;
+    }
+
+    &:active .site-list__icon-comb {
+        opacity: 1;
+        fill: $color-brown;
+    }
+
     .site-list__item a[href] {
         &:hover {
             color: $color-brown;
@@ -106,18 +118,6 @@
             opacity: 1;
             fill: $color-brown;
         }
-    }
-
-    &:active {
-        color: #ffffff;
-
-        background-color: #000000;
-        opacity: 0.3;
-    }
-
-    &:active .site-list__icon-comb {
-        opacity: 1;
-        fill: $color-brown;
     }
 }
 
