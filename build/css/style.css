@@ -336,7 +336,7 @@ img {
     width: 100%;
     height: 400px;
     background-color: black;
-    background-image: url("/build/img/background.jpg");
+    background-image: url("../img/background.jpg");
     background-repeat: no-repeat;
     background-position: center -9px; }
   .page-header__logo-image {
@@ -1011,15 +1011,15 @@ img {
   transition: border-color 0.3s linear, background-color 0.3s linear, opacity 0.3s linear; }
   .social-link--vk {
     width: 107px;
-    background-image: url("/build/img/vk-big.png"); }
+    background-image: url("../img/vk-big.png"); }
   .social-link--fb {
     width: 104px;
     margin-right: -1px;
     margin-left: -1px;
-    background-image: url("/build/img/fb-big.png"); }
+    background-image: url("../img/fb-big.png"); }
   .social-link--ig {
     width: 109px;
-    background-image: url("/build/img/ig-big.png"); }
+    background-image: url("../img/ig-big.png"); }
   .social-link:hover, .social-link:focus {
     border-color: #3f3f3f; }
   .social-link:active {
@@ -1040,9 +1040,9 @@ img {
     .social-link:last-child {
       margin-right: 0; }
     .social-link--vk {
-      background-image: url("/build/img/vk-small.png"); }
+      background-image: url("../img/vk-small.png"); }
     .social-link--fb {
       margin-left: 0;
-      background-image: url("/build/img/fb-small.png"); }
+      background-image: url("../img/fb-small.png"); }
     .social-link--ig {
-      background-image: url("/build/img/ig-small.png"); } }
+      background-image: url("../img/ig-small.png"); } }
