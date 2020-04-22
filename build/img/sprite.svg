@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none">
+<symbol viewBox="0 0 16 16" id="icon-login">
+    <polygon points="0 7 7.01 7 7.01 4.06 10.96 8.01 7.01 11.91 7.01 9.06 0 9.02 0 7"/>
+    <polygon points="7.01 0 7.01 2 14.03 2 14.03 13.99 7.01 13.99 7.01 16 16 16 16 0 7.01 0"/>
+</symbol>
+<symbol viewBox="0 0 21 20" id="icon-scissors">
+    <path
+        d="M8 4a4 4 0 1 0-4 4 2.9 2.9 0 0 0 1.6-.4L8 10l-2.4 2.4A2.9 2.9 0 0 0 4 12a4 4 0 1 0 4 4 2.9 2.9 0 0 0-.4-1.6L10 12l7 7h4L7.6 5.6A2.9 2.9 0 0 0 8 4zM4 6a2 2 0 1 1 2-2 2 2 0 0 1-2 2zm0 12a2 2 0 1 1 2-2 2 2 0 0 1-2 2zm6-8.5a.5.5 0 1 1-.5.5.5.5 0 0 1 .5-.5zM21 1h-4l-6 6 2 2 8-8z"/>
+</symbol>
+</svg>
