@@ -937,14 +937,14 @@ img {
     text-align: left; }
   .page-footer__contacts b {
     text-transform: uppercase; }
-  .page-footer__contacts a {
+  .page-footer__contacts .page-footer__contact-link {
     display: block;
     padding: 0;
     margin: 0;
     font-weight: normal;
     text-align: left;
     border: none; }
-    .page-footer__contacts a:active {
+    .page-footer__contacts .page-footer__contact-link:active {
       background-color: transparent; }
   .page-footer__phone-show {
     font-size: 18px;
