@@ -23,7 +23,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-uglify-es": "^2.0.0",
     "node-normalize-scss": "^8.0.1",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "stylelint": "^13.3.3",
     "stylelint-config-recess-order": "^2.0.4",
     "stylelint-config-recommended": "^3.0.0"
